@@ -4,21 +4,22 @@
 #include<string.h>
 
 struct joueur{
-	int nom[10];
-	int prenom[10];
+	char nom[10];
+	char prenom[10];
 	int age;
 };
 typedef struct joueur joueur ;
 
 int main(){
+	joueur j;
 	int manches;int d1,d,e=0,p=0,g=0;
 	
 	printf("donner le nom : ");
-	scanf("%s",&joueur.nom);
+	scanf("%s",j.nom);
 	printf("donner le prenom : ");
-	scanf("%s",&joueur.prenom);
+	scanf("%s",j.prenom);
 	printf("donner l'age : ");
-	scanf("%d",&joueur.age);
+	scanf("%d",j.age);
 	
 	printf("donner le nombre de manches");
 	scanf("%d",&manches);
@@ -33,19 +34,19 @@ int main(){
 	
 		d1=(rand()%)(3-1+1))+1;
 	
-		if(d1==d){printf("ÈgalitÈ");e++;}
-		if(d1=1 && d=2){printf("gagnÈ");g++}
-		if(d1=1 && d=3){printf("pÈrdu");p++}
-		if(d1=2 && d=3){printf("gagnÈ");g++}
-		if(d1=2 && d=1){printf("pÈrdu");p++}
-		if(d1=3 && d=1){printf("gagnÈ");g++}
-		if(d1=3 && d=2){printf("pÈrdu");p++}
+		if(d1==d){printf("√©galit√©");e++;}
+		if(d1=1 && d=2){printf("gagn√©");g++}
+		if(d1=1 && d=3){printf("p√©rdu");p++}
+		if(d1=2 && d=3){printf("gagn√©");g++}
+		if(d1=2 && d=1){printf("p√©rdu");p++}
+		if(d1=3 && d=1){printf("gagn√©");g++}
+		if(d1=3 && d=2){printf("p√©rdu");p++}
 	
 	}
-	if(p<g){printf("%s rak m3alm (y))",joueur.nom);}
-	if(p>g){printf("%s nn",joueur.nom);}
-	if(p==g){printf("%s ==",joueur.nom);}
-	printf("rbeht %d , khser %d , == %d",g,p,e);
+	if(p<g){printf("%s, tu as gagn√©",j.nom);}
+	if(p>g){printf("%s, tu as perdu",j.nom);}
+	if(p==g){printf("√©galit√©");}
+	printf("gain: %d , perte %d , √©galit√© %d",g,p,e);
 	
 	return 0;
 	}
